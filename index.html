@@ -1,0 +1,41 @@
+<!DOCTYPE html><html>
+<head>
+    <title>Diet Recommendation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body><h2>Personalized Diet Recommendation</h2><form action="/predict" method="POST">Age:<br>
+<input type="number" name="age" required><br><br>
+
+Gender:<br>
+<select name="gender">
+<option value="M">Male</option>
+<option value="F">Female</option>
+</select><br><br>
+
+Height (cm):<br>
+<input type="number" name="height" required><br><br>
+
+Weight (kg):<br>
+<input type="number" name="weight" required><br><br>
+
+Father Weight (kg):<br>
+<input type="number" name="father" required><br><br>
+
+Mother Weight (kg):<br>
+<input type="number" name="mother" required><br><br>
+
+Activity Level:<br>
+<select name="activity">
+<option value="0">Low (No exercise)</option>
+<option value="1">Medium (Walking/Light work)</option>
+<option value="2">High (Gym/Sports)</option>
+</select><br><br>
+
+Family Diabetes:<br>
+<select name="diabetes">
+<option value="0">No</option>
+<option value="1">Yes</option>
+</select><br><br>
+
+<input type="submit" value="Get Diet Plan"></form></body>
+</html>

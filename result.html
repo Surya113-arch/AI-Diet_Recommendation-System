@@ -1,0 +1,9 @@
+<!DOCTYPE html><html>
+<head>
+    <title>Diet Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body><h1>Prediction Result</h1><h2>Your Body Category: {{ result }}</h2><h3>Your BMI: {{ bmi }}</h3><h4>Daily Calorie Need: {{ calories }} kcal/day</h4><h5>Recommended Diet:</h5>
+<p>{{ diet }}</p><br>
+<a href="/">Check Again</a></body>
+</html>

@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4CAF50, #2E8B57);
+    color: white;
+    text-align: center;
+}
+
+form {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    margin: auto;
+}
+
+input, select {
+    width: 90%;
+    padding: 8px;
+    margin: 5px;
+}
+
+input[type="submit"] {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
